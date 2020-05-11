@@ -6,7 +6,7 @@
 
 <head>
     
-    <base href="https://ngp16.github.io/BlogSystemOnlineTest/" />
+    <base href="index.html" />
 
     <meta name="selectedNavigationItem" content="BLOG">
     <link rel="stylesheet" type="text/css" href="./styles/global.css" />
@@ -23,6 +23,7 @@
     <!-- Acumin via. typekit -->
     <link rel="stylesheet" href="https://use.typekit.net/idx8cma.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
@@ -34,6 +35,14 @@
         <ul id="navigation-side" class="navigation-list mobileonly">
             <li>
                 <a href="./index.html">Articles</a>
+                <span class="nav-border"></span>
+            </li>
+            <li>
+                <a href="https://forms.gle/RpDfwK9KTC7PWUJ3A">Submissions</a>
+                <span class="nav-border"></span>
+            </li>
+            <li>
+                <a href="https://forms.gle/Dpobchtfuk1Vi3Ch6">Recruitment</a>
                 <span class="nav-border"></span>
             </li>
             <li>
@@ -74,7 +83,14 @@
                     <span class="nav-border"></span>
                     <a href="./index.html">Articles</a>
                 </li>
-
+                <li>
+                    <span class="nav-border"></span>
+                    <a href="https://forms.gle/RpDfwK9KTC7PWUJ3A">Submissions</a>
+                </li>
+                <li>
+                    <span class="nav-border"></span>
+                    <a href="https://forms.gle/Dpobchtfuk1Vi3Ch6">Recruitment</a>
+                </li>
                 <li>
 
                     <a href="./about.html">About</a></li>
@@ -98,7 +114,8 @@
             <header>
                 <a href="index.html">
                     <div id="logo-container">
-                        <img alt="ISSIA Logo" class="no-select" src="./content/images/logo.png" id="header-logo">
+                        <img alt="ISSIA Logo" class="no-select header-logo desktoponly" src="./content/images/logo.png">
+                        <img alt="ISSIA Logo" class="no-select header-logo mobileonly-important" src="./content/images/logomobile.png">
                     </div>
                 </a>
                 <div id="date-container">
@@ -110,8 +127,16 @@
                             <a href="./index.html">Articles</a>
                         </li>
                         <li>
-
-                            <a href="./about.html">About</a></li>
+                            <span class="nav-border"></span>
+                            <a href="https://forms.gle/RpDfwK9KTC7PWUJ3A">Submissions</a>
+                        </li>
+                        <li>
+                            <span class="nav-border"></span>
+                            <a href="https://forms.gle/Dpobchtfuk1Vi3Ch6">Recruitment</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">About</a>
+                        </li>
                     </ul>
 
                     <span class="navigation-search-container">
@@ -134,6 +159,7 @@
             <!-- ALL CONTENT GOES HERE -->
 
 
+
             <!-- temp spacer -->
             <div style="height: calc(100vh - 300px); text-align: center; position: relative">
 
@@ -147,8 +173,8 @@
                 <div class="spacer"></div>
 
                 <span id="footer-logo-container">
-                    <img alt="HSSC Logo" id="footer-hssc-logo" src="./content/images/hsscLogo.png">
-                    <span>Copyright © 2020 HSSC</span>
+                    <img alt="ISSIA Logo" id="footer-logo" src="./content/images/logo.png">
+                    <span>Copyright © 2020 ISSIA</span>
                 </span>
                 <div id="social-area">
                     <a href="https://www.facebook.com/issiaofficial/" target="_blank" class="fa fa-facebook"></a>
@@ -161,10 +187,10 @@
             <!-- scripts -->
             <script src="./scripts/global.js"></script>
             <script src="./scripts/dateDisplay.js"></script>
+            <script src="./scripts/gallery.js"></script>
 
         </div>
 
-        
         <footer id="footer-color-filler"></footer>
     </div>
 </body>

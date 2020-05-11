@@ -18,6 +18,7 @@
 
     <link rel="shortcut icon" href="./icon.ico" />
 
+    <meta name="keywords" content="ISSIA, inter-school, social issues, humanities, hong kong">
 
     <!-- SOCIAL EMBEDS -->
     <meta name="description" content="In recent times, depression and apathy have become prominent buzzwords in the field of neuropsychiatric disorders. With good reason too: the(...)">
@@ -43,10 +44,10 @@
 
     <!-- Acumin via. typekit -->
     <link rel="stylesheet" href="https://use.typekit.net/idx8cma.css">
-        <!-- Merriweather via. google fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    <!-- Merriweather via. google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
@@ -58,6 +59,14 @@
         <ul id="navigation-side" class="navigation-list mobileonly">
             <li>
                 <a href="./index.html">Articles</a>
+                <span class="nav-border"></span>
+            </li>
+            <li>
+                <a href="https://forms.gle/RpDfwK9KTC7PWUJ3A">Submissions</a>
+                <span class="nav-border"></span>
+            </li>
+            <li>
+                <a href="https://forms.gle/Dpobchtfuk1Vi3Ch6">Recruitment</a>
                 <span class="nav-border"></span>
             </li>
             <li>
@@ -98,7 +107,14 @@
                     <span class="nav-border"></span>
                     <a href="./index.html">Articles</a>
                 </li>
-
+                <li>
+                    <span class="nav-border"></span>
+                    <a href="https://forms.gle/RpDfwK9KTC7PWUJ3A">Submissions</a>
+                </li>
+                <li>
+                    <span class="nav-border"></span>
+                    <a href="https://forms.gle/Dpobchtfuk1Vi3Ch6">Recruitment</a>
+                </li>
                 <li>
 
                     <a href="./about.html">About</a></li>
@@ -122,7 +138,8 @@
             <header>
                 <a href="index.html">
                     <div id="logo-container">
-                        <img alt="ISSIA Logo" class="no-select" src="./content/images/logo.png" id="header-logo">
+                        <img alt="ISSIA Logo" class="no-select header-logo desktoponly" src="./content/images/logo.png">
+                        <img alt="ISSIA Logo" class="no-select header-logo mobileonly-important" src="./content/images/logomobile.png">
                     </div>
                 </a>
                 <div id="date-container">
@@ -134,8 +151,16 @@
                             <a href="./index.html">Articles</a>
                         </li>
                         <li>
-
-                            <a href="./about.html">About</a></li>
+                            <span class="nav-border"></span>
+                            <a href="https://forms.gle/RpDfwK9KTC7PWUJ3A">Submissions</a>
+                        </li>
+                        <li>
+                            <span class="nav-border"></span>
+                            <a href="https://forms.gle/Dpobchtfuk1Vi3Ch6">Recruitment</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">About</a>
+                        </li>
                     </ul>
 
                     <span class="navigation-search-container">
@@ -227,7 +252,7 @@
                     var disqus_config = function () {
 
                         this.page.url = window.location
-                        .href; // Replace PAGE_URL with your page's canonical URL variable
+                            .href; // Replace PAGE_URL with your page's canonical URL variable
 
                         // TEST URL
                         //this.page.url = "https://hsscstc.github.io/blog/test.html"; 
@@ -247,6 +272,25 @@
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
                         powered by Disqus.</a></noscript>
             </div>
+
+            <div class="wide-area desktoponly small-section serif-area" style="margin-bottom: 32px;">
+                <h2 class="medium-text" id="mailing-text">Subscribe to our newsletter</h2>
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScSJCa4CIBKgI9wXaZicix14EfD7NUQxLWW0hlLHo1xqNJFTg/viewform">
+                    <button id="mailing-button" class="heavy-button">Subscribe now
+                    </button>
+                </a>
+            </div>
+
+            <div class="wide-area mobileonly small-section-mobile serif-area-all" style="margin-bottom: 16px;">
+                <h2 class="medium-text">Subscribe to our newsletter</h2>
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScSJCa4CIBKgI9wXaZicix14EfD7NUQxLWW0hlLHo1xqNJFTg/viewform">
+                    <button class="heavy-button">Subscribe now
+                    </button>
+                </a>
+            </div>
+
 
             <!-- DESKTOP GRID LAYOUT -->
 

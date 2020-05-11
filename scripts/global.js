@@ -69,3 +69,27 @@ function showSearch(target) {
         window.location.href = new URL("search.html", document.baseURI).href;
     }
 }
+
+
+//#region toggle visibility buttons
+var toggleButtons = document.getElementsByClassName("toggle-mobile-visibility");
+
+for (var i = 0; i < toggleButtons.length; i++) {
+    toggleButtons[i].addEventListener("click", (e) => toggleButtonClicked(e.srcElement) );
+}
+
+function toggleButtonClicked(button) {
+    var toggled = button.getAttribute("data-toggled") == "true";
+    if (toggled) {
+        button.setAttribute("data-toggled", "false");
+        button.innerHTML = button.getAttribute("data-hidden-text");
+        document.getElementById(button.getAttribute("data-target")).classList.add("mobile-toggle-hidden");
+    }
+    else {
+        button.setAttribute("data-toggled", "true");
+        button.innerHTML = button.getAttribute("data-visible-text");
+        document.getElementById(button.getAttribute("data-target")).classList.remove("mobile-toggle-hidden");
+    }
+}
+
+//#endregion

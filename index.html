@@ -3,7 +3,7 @@
 <html lang="en" id="html">
 
 <head>
-    
+
     <base href="index.html" />
 
     <meta name="selectedNavigationItem" content="BLOG">
@@ -17,7 +17,10 @@
 
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>ISSIA</title>
+
+    <meta name="keywords" content="ISSIA, inter-school, social issues, humanities, hong kong">
+
+    <title>ISSIA HK</title>
 
     <!-- fonts -->
 
@@ -25,10 +28,10 @@
 
     <!-- Acumin via. typekit -->
     <link rel="stylesheet" href="https://use.typekit.net/idx8cma.css">
-        <!-- Merriweather via. google fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    <!-- Merriweather via. google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
@@ -40,6 +43,14 @@
         <ul id="navigation-side" class="navigation-list mobileonly">
             <li>
                 <a href="./index.html">Articles</a>
+                <span class="nav-border"></span>
+            </li>
+            <li>
+                <a href="https://forms.gle/RpDfwK9KTC7PWUJ3A">Submissions</a>
+                <span class="nav-border"></span>
+            </li>
+            <li>
+                <a href="https://forms.gle/Dpobchtfuk1Vi3Ch6">Recruitment</a>
                 <span class="nav-border"></span>
             </li>
             <li>
@@ -80,7 +91,14 @@
                     <span class="nav-border"></span>
                     <a href="./index.html">Articles</a>
                 </li>
-
+                <li>
+                    <span class="nav-border"></span>
+                    <a href="https://forms.gle/RpDfwK9KTC7PWUJ3A">Submissions</a>
+                </li>
+                <li>
+                    <span class="nav-border"></span>
+                    <a href="https://forms.gle/Dpobchtfuk1Vi3Ch6">Recruitment</a>
+                </li>
                 <li>
 
                     <a href="./about.html">About</a></li>
@@ -104,7 +122,8 @@
             <header>
                 <a href="index.html">
                     <div id="logo-container">
-                        <img alt="ISSIA Logo" class="no-select" src="./content/images/logo.png" id="header-logo">
+                        <img alt="ISSIA Logo" class="no-select header-logo desktoponly" src="./content/images/logo.png">
+                        <img alt="ISSIA Logo" class="no-select header-logo mobileonly-important" src="./content/images/logomobile.png">
                     </div>
                 </a>
                 <div id="date-container">
@@ -116,8 +135,16 @@
                             <a href="./index.html">Articles</a>
                         </li>
                         <li>
-
-                            <a href="./about.html">About</a></li>
+                            <span class="nav-border"></span>
+                            <a href="https://forms.gle/RpDfwK9KTC7PWUJ3A">Submissions</a>
+                        </li>
+                        <li>
+                            <span class="nav-border"></span>
+                            <a href="https://forms.gle/Dpobchtfuk1Vi3Ch6">Recruitment</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">About</a>
+                        </li>
                     </ul>
 
                     <span class="navigation-search-container">
@@ -328,8 +355,16 @@
             </div>
 
             <div>
+
                 <div id="blog-navigation">
-                    <ul class="navigation-list">
+
+                    <button class="toggle-mobile-visibility mobile-button mobileonly"
+                        data-target="small-category-container" data-visible-text="- Hide tags"
+                        data-hidden-text="+ Show Tags" data-toggled="false">
+                        + Show Tags
+                    </button>
+
+                    <ul class="navigation-list mobile-toggle-hidden" id="small-category-container">
 
                         <!-- $(TEMPLATE BLOG_NAVIGATION_TEMPLATE)$(ENDTEMPLATE BLOG_NAVIGATION_TEMPLATE) -->
 
@@ -398,7 +433,7 @@
             <!-- DESKTOP GRID LAYOUT -->
 
             <!-- Syntax for POST_UID: arg 1 = index, arg 2 = category index where 0 is all, and 1 is archived-->
-            <div class="desktoponly serif-area" id="blog-grid-area">
+            <div class="desktoponly serif-area blog-grid-area" style="margin-bottom: 32px">
 
                 <!-- $(REGION POST_AREA $(GLOBAL POST_UID 0 0)) -->
 
@@ -577,7 +612,7 @@
                 </a>
                 <!-- $(ENDREGION HEADER_IMAGE) -->
 
-                <a class="large-reel-large-teaser-alt row-3 linkfix grid-sep-bottom"
+                <a class="large-reel-large-teaser-alt row-3 linkfix grid-sep-bottom childhover-parent"
                     href="./blog/the-battle-for-climate-action.html">
 
                     <div class="vertical-align-middle">
@@ -600,6 +635,227 @@
 
             </div>
 
+            <div class="desktoponly serif-area large-section" style="margin-bottom: 32px">
+                <img id="microphone-img" src="./content/images/microphone.png">
+                <h1 id="podcasts-text" class="heavy-text">ISSIA Podcasts</h1>
+                <a href="./blog/podcasts.html">
+                    <button id="podcasts-button" class="heavy-button">Listen now
+                    </button>
+                </a>
+            </div>
+
+            <!-- SECOND GRID -->
+
+            <!-- Syntax for POST_UID: arg 1 = index, arg 2 = category index where 0 is all, and 1 is archived-->
+            <div class="desktoponly serif-area blog-grid-area" style="margin-bottom: 32px">
+
+                <!-- $(REGION POST_AREA $(GLOBAL POST_UID 7 0)) -->
+
+                <a class="large-reel-large-teaser row-1 linkfix grid-sep-bottom childhover-parent"
+                    href="./blog/change-the-world-with-your-diet.html">
+
+                    <div class="vertical-align-middle">
+
+                        <span class="categories-container">
+                            <!-- $(TEMPLATE POST_CATEGORY_TAG_GALLERY)$(ENDTEMPLATE POST_CATEGORY_TAG_GALLERY) -->
+
+                            <!-- $(REGION POST_CATEGORY_TAG_AREA POST_CATEGORY_TAG_GALLERY) -->
+
+                            <!-- $(ENDREGION POST_CATEGORY_TAG_AREA) -->
+                        </span>
+
+                        <h1 style="margin-top: 2px; margin-bottom: 8px;" class="childhover-target resizeable-headline">
+                            Change the World with your Diet</h1>
+
+                        <span>Have you ever thought about the impact your meat-consuming diet has on not only you but the whole world? </span>
+                    </div>
+                </a>
+
+                <!-- $(REGION HEADER_IMAGE) -->
+                <a href="./blog/change-the-world-with-your-diet.html" class="large-reel-large-image row-1 grid-sep-bottom">
+                    <img class="grid-image" src="./content/images/rd3xhnhfLGw3wz71_HEADER.jpg" alt="">
+                </a>
+                <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                <!-- $(ENDREGION POST_AREA) -->
+
+                <!-- $(REGION POST_AREA $(GLOBAL POST_UID 8 0)) -->
+
+                <a class="large-reel-small-teaser row-1 linkfix grid-sep-bottom grid-sep-left childhover-parent"
+                    href="./blog/how-to-graduate-a-step-by-step-guide.html">
+
+                    <div class="vertical-align-middle">
+
+                        <span class="categories-container">
+                            <!-- $(TEMPLATE POST_CATEGORY_TAG_GALLERY)$(ENDTEMPLATE POST_CATEGORY_TAG_GALLERY) -->
+
+                            <!-- $(REGION POST_CATEGORY_TAG_AREA POST_CATEGORY_TAG_GALLERY) -->
+
+                            <!-- $(ENDREGION POST_CATEGORY_TAG_AREA) -->
+                        </span>
+
+                        <h3 style="margin-top: 2px; margin-bottom: 8px; line-height: 30px;" class="childhover-target">
+                            How to Graduate: a Step by Step Guide</h3>
+
+                        <span>As many of us reach the end of our seemingly endless childhood and prepare to journey(...)</span>
+                    </div>
+                </a>
+
+                <!-- $(ENDREGION POST_AREA) -->
+
+                <!-- $(REGION POST_AREA $(GLOBAL POST_UID 9 0)) -->
+
+                <a class="small-reel-small-teaser-1 row-2 linkfix grid-sep-bottom childhover-parent"
+                    href="./blog/talk-to-me.html">
+
+                    <div class="vertical-align-middle">
+
+                        <span class="categories-container">
+                            <!-- $(TEMPLATE POST_CATEGORY_TAG_GALLERY)$(ENDTEMPLATE POST_CATEGORY_TAG_GALLERY) -->
+
+                            <!-- $(REGION POST_CATEGORY_TAG_AREA POST_CATEGORY_TAG_GALLERY) -->
+
+                            
+                            <span class="grid-category-text">Mental Health</span>
+
+                            <!-- $(ENDREGION POST_CATEGORY_TAG_AREA) -->
+                        </span>
+
+                        <h3 style="margin-top: 2px; margin-bottom: 8px; line-height: 30px;" class="childhover-target">
+                            “Talk to Me”</h3>
+
+                        <span>These three words can either be the most important or the mo(...)</span>
+                    </div>
+                </a>
+
+                <!-- $(ENDREGION POST_AREA) -->
+
+
+                <!-- $(REGION POST_AREA $(GLOBAL POST_UID 10 0)) -->
+
+                <a class="small-reel-small-teaser-2 row-2 linkfix grid-sep-bottom grid-sep-left childhover-parent"
+                    href="./blog/best-of-both-worlds.html">
+
+                    <div class="vertical-align-middle">
+
+                        <span class="categories-container">
+                            <!-- $(TEMPLATE POST_CATEGORY_TAG_GALLERY)$(ENDTEMPLATE POST_CATEGORY_TAG_GALLERY) -->
+
+                            <!-- $(REGION POST_CATEGORY_TAG_AREA POST_CATEGORY_TAG_GALLERY) -->
+
+                            <!-- $(ENDREGION POST_CATEGORY_TAG_AREA) -->
+                        </span>
+
+                        <h3 style="margin-top: 2px; margin-bottom: 8px; line-height: 30px;" class="childhover-target">
+                            Best of Both Worlds</h3>
+
+                        <span>Bisexuality, in the simplest of terms, is an attraction to t(...)</span>
+                    </div>
+                </a>
+
+
+                <!-- $(REGION HEADER_IMAGE) -->
+                <a href="./blog/best-of-both-worlds.html " class="small-reel-image row-2 grid-sep-bottom">
+                    <img class="grid-image" src="./content/images/k9yYvBnpj2qRUwE5_HEADER.jpg" alt="">
+                </a>
+                <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                <!-- $(ENDREGION POST_AREA) -->
+
+
+                <!-- $(REGION POST_AREA $(GLOBAL POST_UID 11 0)) -->
+
+                <a class="small-reel-small-teaser-3 row-2 linkfix grid-sep-bottom grid-sep-left childhover-parent"
+                    href="./blog/seize-your-opportunities-student-advocacy-in-hong-kong-.html">
+
+                    <div class="vertical-align-middle">
+
+                        <span class="categories-container">
+                            <!-- $(TEMPLATE POST_CATEGORY_TAG_GALLERY)$(ENDTEMPLATE POST_CATEGORY_TAG_GALLERY) -->
+
+                            <!-- $(REGION POST_CATEGORY_TAG_AREA POST_CATEGORY_TAG_GALLERY) -->
+
+                            <!-- $(ENDREGION POST_CATEGORY_TAG_AREA) -->
+                        </span>
+
+                        <h3 style="margin-top: 2px; margin-bottom: 8px; line-height: 30px;" class="childhover-target">
+                            Seize Your Opportunities: Student Advocacy in Hong Kong </h3>
+
+                        <span>As a student in GSIS, I feel that there has not been nearly (...)</span>
+                    </div>
+                </a>
+
+                <!-- $(ENDREGION POST_AREA) -->
+
+
+                <!-- $(REGION POST_AREA $(GLOBAL POST_UID 12 0)) -->
+
+                <a class="large-reel-small-teaser-alt row-3 linkfix grid-sep-bottom grid-sep-right childhover-parent"
+                    href="./blog/the-importance-of-mindset.html">
+
+                    <div class="vertical-align-middle">
+
+                        <span class="categories-container">
+                            <!-- $(TEMPLATE POST_CATEGORY_TAG_GALLERY)$(ENDTEMPLATE POST_CATEGORY_TAG_GALLERY) -->
+
+                            <!-- $(REGION POST_CATEGORY_TAG_AREA POST_CATEGORY_TAG_GALLERY) -->
+
+                            <!-- $(ENDREGION POST_CATEGORY_TAG_AREA) -->
+                        </span>
+
+                        <h3 style="margin-top: 2px; margin-bottom: 8px; line-height: 30px;" class="childhover-target">
+                            The Importance of Mindset</h3>
+
+                        <span>Do you cringe when the term “fixed” or “growth” mindset is b(...)</span>
+                    </div>
+                </a>
+
+                <!-- $(ENDREGION POST_AREA) -->
+
+
+
+                <!-- $(REGION POST_AREA $(GLOBAL POST_UID 13 0)) -->
+
+                <!-- $(REGION HEADER_IMAGE) -->
+
+                <a href="./blog/depression-and-apathy-whats-the-difference.html " class="large-reel-large-image-alt row-3 grid-sep-bottom">
+                    <img class="grid-image" src="./content/images/zS1N42gdyy6Fe0BK_HEADER.jpg" alt="">
+                </a>
+                <!-- $(ENDREGION HEADER_IMAGE) -->
+
+                <a class="large-reel-large-teaser-alt row-3 linkfix grid-sep-bottom childhover-parent"
+                    href="./blog/depression-and-apathy-whats-the-difference.html">
+
+                    <div class="vertical-align-middle">
+
+                        <span class="categories-container">
+                            <!-- $(TEMPLATE POST_CATEGORY_TAG_GALLERY)$(ENDTEMPLATE POST_CATEGORY_TAG_GALLERY) -->
+
+                            <!-- $(REGION POST_CATEGORY_TAG_AREA POST_CATEGORY_TAG_GALLERY) -->
+
+                            <!-- $(ENDREGION POST_CATEGORY_TAG_AREA) -->
+                        </span>
+
+                        <h2 style="margin-top: 2px; margin-bottom: 8px;" class="childhover-target">Depression and Apathy: What’s the Difference?</h2>
+
+                        <span>In recent times, depression and apathy have become prominent buzzwords in the field of neuropsychiatric disorders. With good reaso(...)</span>
+                    </div>
+                </a>
+
+                <!-- $(ENDREGION POST_AREA) -->
+
+            </div>
+
+            <div class="desktoponly small-section serif-area" style="margin-bottom: 32px;">
+                <h2 class="medium-text" id="mailing-text">Subscribe to our newsletter</h2>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScSJCa4CIBKgI9wXaZicix14EfD7NUQxLWW0hlLHo1xqNJFTg/viewform">
+                    <button id="mailing-button" class="heavy-button">Subscribe now
+                    </button>
+                </a>
+            </div>
+
+
+
             <!-- MOBILE LIST LAYOUT -->
             <div class="wide-area" id="blog-list-area">
 
@@ -612,7 +868,7 @@
 
                 
 
-                <a class="category-link serif-area" href="./blog/parasite.html">
+                <a class="category-link" href="./blog/parasite.html">
                     <div class="category-post-container">
 
                         <!-- $(REGION HEADER_IMAGE) -->
@@ -647,7 +903,7 @@
 
                 
 
-                <a class="category-link serif-area" href="./blog/podcast-political-apathy.html">
+                <a class="category-link" href="./blog/podcast-political-apathy.html">
                     <div class="category-post-container">
 
                         <!-- $(REGION HEADER_IMAGE) -->
@@ -682,7 +938,7 @@
 
                 
 
-                <a class="category-link serif-area" href="./blog/five-people-who-control-us.html">
+                <a class="category-link" href="./blog/five-people-who-control-us.html">
                     <div class="category-post-container">
 
                         <!-- $(REGION HEADER_IMAGE) -->
@@ -717,7 +973,7 @@
 
                 
 
-                <a class="category-link serif-area" href="./blog/an-exploration-of-discrimination-and-prejudice-.html">
+                <a class="category-link" href="./blog/an-exploration-of-discrimination-and-prejudice-.html">
                     <div class="category-post-container">
 
                         <!-- $(REGION HEADER_IMAGE) -->
@@ -752,7 +1008,7 @@
 
                 
 
-                <a class="category-link serif-area" href="./blog/impacts-of-stereotyping-and-importance-of-individualism.html">
+                <a class="category-link" href="./blog/impacts-of-stereotyping-and-importance-of-individualism.html">
                     <div class="category-post-container">
 
                         <!-- $(REGION HEADER_IMAGE) -->
