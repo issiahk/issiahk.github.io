@@ -1,0 +1,409 @@
+<!-- !BLOG IGNORE -->
+
+<!DOCTYPE html>
+
+<html lang="en" id="html">
+
+<head>
+
+    <base href="../index.html" />
+
+    <meta name="selectedNavigationItem" content="BLOG">
+    <link rel="stylesheet" type="text/css" href="./styles/global.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/home.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/category.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/blog.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/blogLayout.css" />
+
+    <link rel="shortcut icon" href="./icon.ico" />
+
+    <meta name="keywords" content="ISSIA, inter-school, social issues, humanities, hong kong">
+
+    <!-- SOCIAL EMBEDS -->
+    <meta name="description" content="Sticks and stones break my bones but growing up has torn my soul to pieces.">
+    <meta name="author" content="Ellis Loh (STC)">
+
+    <meta name="og:title" content="'Your Expectations'">
+    <meta name="og:description" content="Sticks and stones break my bones but growing up has torn my soul to pieces.">
+
+    <!-- $(REGION HEADER_IMAGE) -->
+    <meta property="og:image" content="./content/images/dgPjFsqyGnIcr7v8_HEADER.png">
+    <!-- $(ENDREGION HEADER_IMAGE) -->
+    <meta name="twitter:card" content="summary_large_image">
+
+
+
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>'Your Expectations' - ISSIA</title>
+
+    <!-- fonts -->
+
+    <!-- Couture is removed for copyright and performance reasons. A logo compiled using font bitmaps has instead been used. -->
+
+    <!-- Acumin via. typekit -->
+    <link rel="stylesheet" href="https://use.typekit.net/idx8cma.css">
+    <!-- Merriweather via. google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+
+<body>
+
+    <div id="sidebar" class="pushy-closed mobileonly">
+        <ul id="navigation-side" class="navigation-list mobileonly">
+            <li>
+                <a href="./index.html">Articles</a>
+                <span class="nav-border"></span>
+            </li>
+            <li>
+                <a href="https://forms.gle/RpDfwK9KTC7PWUJ3A">Submissions</a>
+                <span class="nav-border"></span>
+            </li>
+            <li>
+                <a href="https://forms.gle/Dpobchtfuk1Vi3Ch6">Recruitment</a>
+                <span class="nav-border"></span>
+            </li>
+            <li>
+                <a href="./about.html">About</a>
+                <span class="nav-border"></span>
+            </li>
+
+            <li>
+                <a href="./contact.html">Contact</a>
+                <span class="nav-border"></span>
+            </li>
+        </ul>
+
+        <span class="navigation-search-container" id="navigation-topbar-search-container">
+            <button class="navigation-search-button" data-target="navigation-sidebar-search-textbox">
+                <img src="./content/icons/baseline_search_black_36dp.png">
+            </button>
+
+            <form class="navigation-search-form" action="./search.html">
+                <input type="text" name="q" class="desktop-search-textbox" id="navigation-sidebar-search-textbox">
+                <input type="submit" class="hidden">
+            </form>
+        </span>
+    </div>
+
+    <div id="bodyarea">
+
+        <div id="topbar" class="top-desktop-hidden">
+
+            <a href="./index.html">
+                <img alt="ISSIA Logo" class="mobileonly" id="topbar-logo" src="./content/images/logomobilenav.png">
+            </a>
+
+            <span class="mobileonly" id="hamburger-container">
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
+            </span>
+
+            <ul id="topbar-nav" class="navigation-list desktoponly">
+
+                <li>
+                    <span class="nav-border"></span>
+                    <a href="./index.html">Articles</a>
+                </li>
+                <li>
+                    <span class="nav-border"></span>
+                    <a href="https://forms.gle/RpDfwK9KTC7PWUJ3A">Submissions</a>
+                </li>
+                <li>
+                    <span class="nav-border"></span>
+                    <a href="https://forms.gle/Dpobchtfuk1Vi3Ch6">Recruitment</a>
+                </li>
+                <li>
+                    <span class="nav-border"></span>
+                    <a href="./about.html">About</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+            <span class="navigation-search-container desktoponly" id="navigation-topbar-search-container">
+                <button class="navigation-search-button" data-target="navigation-topbar-search-textbox">
+                    <img src="./content/icons/baseline_search_black_36dp.png">
+                </button>
+
+                <form class="navigation-search-form" action="./search.html">
+                    <input type="text" name="q" class="desktop-search-textbox" id="navigation-topbar-search-textbox">
+                    <input type="submit" class="hidden">
+                </form>
+            </span>
+
+        </div>
+
+        <div id="body-container">
+            <header>
+                <a href="index.html">
+                    <div id="logo-container">
+                        <img alt="ISSIA Logo" class="no-select header-logo desktoponly" src="./content/images/logo.png">
+                        <img alt="ISSIA Logo" class="no-select header-logo mobileonly-important"
+                            src="./content/images/logomobile.png">
+                    </div>
+                </a>
+                <div id="date-container">
+                </div>
+                <div id="navigation">
+                    <ul id="navigation-header" class="navigation-list">
+                        <li>
+                            <span class="nav-border"></span>
+                            <a href="./index.html">Articles</a>
+                        </li>
+                        <li>
+                            <span class="nav-border"></span>
+                            <a href="https://forms.gle/RpDfwK9KTC7PWUJ3A">Submissions</a>
+                        </li>
+                        <li>
+                            <span class="nav-border"></span>
+                            <a href="https://forms.gle/Dpobchtfuk1Vi3Ch6">Recruitment</a>
+                        </li>
+                        <li>
+                            <span class="nav-border"></span>
+                            <a href="./about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <span class="navigation-search-container">
+                        <button class="navigation-search-button" data-target="navigation-header-search-textbox">
+                            <img src="./content/icons/baseline_search_black_36dp.png">
+                        </button>
+
+                        <form class="navigation-search-form" action="./search.html">
+                            <input type="text" name="q" class="desktop-search-textbox"
+                                id="navigation-header-search-textbox">
+                            <input type="submit" class="hidden">
+                        </form>
+                    </span>
+                </div>
+
+                <div class="separator mobileonly"></div>
+            </header>
+
+
+            <!-- ALL CONTENT GOES HERE -->
+
+            <div class="wide-area">
+
+                <div class="blog-categories-container">
+
+                    <!-- $(TEMPLATE POST_CATEGORY_TAG)$(ENDTEMPLATE POST_CATEGORY_TAG) -->
+
+                    <!-- $(REGION POST_CATEGORY_TAG_AREA POST_CATEGORY_TAG) -->
+
+                    
+                    <a class="blog-category-tag" href="./blog/culture-.html">Culture </a>
+                    <!-- $(ENDREGION POST_CATEGORY_TAG_AREA) -->
+
+                </div>
+
+                <span class="serif-area-all">
+
+                    <h1 class="headline">'Your Expectations'</h1>
+
+                    <!-- $(REGION HEADER_IMAGE) -->
+                    <img src="./content/images/dgPjFsqyGnIcr7v8_HEADER.png">
+                    <p class="blog-post-image-caption">Illustration by Erin Fung (CDNIS)</p>
+                    <!-- $(ENDREGION HEADER_IMAGE) -->
+
+
+                    <div class="blog-post-data-container" id="blog-post-author-container">
+                        <span>By </span>
+                        <span>Ellis Loh (STC)</span>
+                    </div>
+
+                    <div class="blog-post-data-container" id="blog-post-date-container">
+                        <span>Published on </span>
+                        <span>August 9th, 2020</span>
+                    </div>
+
+                    <div style="height: 6px"></div>
+
+                    <div class="separator"></div>
+
+                </span>
+            </div>
+
+            <div class="narrow-area-left serif-area-all" id="blog-post-content-area">
+                <p><span style="font-size: 16px; ">Sticks and stones break my bones but growing up has torn my soul to pieces.</span></p><p><span style="font-size: 16px; ">My childhood was no beauty.</span></p><p><span style="font-size: 16px; ">No time for Barbie dolls when there were rice grains to be picked </span></p><p><span style="font-size: 16px; ">Delicate fingers are to be blessed with elegance, right?</span></p><p><span style="font-size: 16px; ">Mine: stretched and wizened, blessed by the ugly duckling.</span></p><p></p><p><span style="font-size: 16px; ">Western femininity overshadowed by traditional sentiments</span></p><p><span style="font-size: 16px; ">that my youthful bliss didn’t have me feeling like less.</span></p><p><span style="font-size: 16px; ">But with a few magic beans and a simple plane ticket, </span></p><p><span style="font-size: 16px; ">this was all doomed to change</span></p><p><span style="font-size: 16px; ">when I left my childhood and boarded that plane.</span></p><p><span style="font-size: 16px; ">I thought life would be better just like on tv…</span></p><p><span style="font-size: 16px; ">But I just jumped from the frying pan into the fire…</span></p><p></p><p><span style="font-size: 16px; ">They called me a tomboy; an ugly he-she. </span></p><p><span style="font-size: 16px; ">They told me to go back to where I came from.</span></p><p><span style="font-size: 16px; ">Instead of a melting pot, all I got were judgements from what the eye could see.</span></p><p><span style="font-size: 16px; ">They called me lists of words I dare not repeat but still have the power to press replay in my mind. </span></p><p><span style="font-size: 16px; ">Because they were rich, and I was not.</span></p><p><span style="font-size: 16px; ">Because she was pretty, and I couldn’t pay the bills of beauty.</span></p><p><span style="font-size: 16px; ">A life I no longer wanted because they couldn’t see me for me.</span></p><p><span style="font-size: 16px; ">I’m paralysed-  Paralysed by the desire to be liked.</span></p><p><span style="font-size: 16px; ">I need the dazzling stars in the night sky to give me their power.</span></p><p><span style="font-size: 16px; ">The power of beauty. </span></p><p></p><p><span style="font-size: 16px; ">They never laid a finger on me, </span></p><p><span style="font-size: 16px; ">but every syllable I heard them speak, stabbed through my soul, hardening my heart.</span></p><p><span style="font-size: 16px; ">Life was brutal. And I mean that in every sense of the word</span></p><p><span style="font-size: 16px; ">It was easier to hide in the darkness before puberty took control. I learnt.</span></p><p></p><p><span style="font-size: 16px; ">I checked myself into the hotel of social rehab </span></p><p><span style="font-size: 16px; ">Finding myself ironically wandered drunk on the society </span></p><p><span style="font-size: 16px; ">I needed more to be a better me.</span></p><p><span style="font-size: 16px; ">I suffocated my suffering in a cotton case grave. </span></p><p><span style="font-size: 16px; ">I believed all the lies they told me about who I am.</span></p><p><span style="font-size: 16px; ">Or who I was.</span></p><p><span style="font-size: 16px; ">So I changed for them.</span></p><p><span style="font-size: 16px; ">In came the heavy-caked makeup, the brown hair, clothes so tight that painted my body like a masterpiece.</span></p><p><span style="font-size: 16px; ">But I can’t lie…</span></p><p><span style="font-size: 16px; ">I loved the attention.</span></p><p><span style="font-size: 16px; ">The attention was on me. And this is what I wanted...I thought.</span></p><p><span style="font-size: 16px; ">I loved the attention when I thought it was for me…until I realised that it was targeting my sexual parts.</span></p><p><span style="font-size: 16px; ">Exposing my body.</span></p><p><span style="font-size: 16px; ">They planted a seed of hope penetrating my bloodstream.</span></p><p><span style="font-size: 16px; ">The shattered hope of being liked and beautiful. </span></p><p></p><p><span style="font-size: 16px; ">I didn’t seem to care.</span></p><p><span style="font-size: 16px; ">My heart allowed it, but my gut said no.</span></p><p><span style="font-size: 16px; ">No eye has seen and no ear has heard just how much my heart beats </span></p><p><span style="font-size: 16px; ">for how much I care about what they think of me. </span></p><p><span style="font-size: 16px; ">I breathed an all out-raged war on me by me battles versus them or the next thing they see as “beauty”.</span></p><p><span style="font-size: 16px; ">I shackled in the safest place possible on the island of cowardice.</span></p><p><span style="font-size: 16px; ">At the corner of complacency and fitting in, </span></p><p><span style="font-size: 16px; ">I pray they won’t notice this insecurity I call a life. </span></p><p></p><p><span style="font-size: 16px; ">Sometimes I still roam the battlefield at night</span></p><p><span style="font-size: 16px; ">dressed in my armour of short skirts and tight crop tops. </span></p><p><span style="font-size: 16px; ">I look at other girls as they roam the battlefield in tank tops </span></p><p><span style="font-size: 16px; ">Believing they have tanked, sinking at the bottom of the ocean, as I am on top of the world.</span></p><p><span style="font-size: 16px; ">But you become a sad and lonely self when all you are is the tip of the iceberg.</span></p><p><span style="font-size: 16px; ">I find myself drowning in trivial comparisons until I surrender my armour to become content. </span></p><p><span style="font-size: 16px; ">To become one with them.</span></p><p><span style="font-size: 16px; ">Yet, for a woman, it’s a universal struggle to achieve beauty.</span></p><p><span style="font-size: 16px; ">But I could care less… </span></p><p></p><p><span style="font-size: 16px; ">When I say I could care less about what people think of me </span></p><p><span style="font-size: 16px; ">I could. </span></p><p><span style="font-size: 16px; ">I could care much less but I care a whole lot </span></p><p><span style="font-size: 16px; ">But they are not my source. </span></p><p><span style="font-size: 16px; ">Their “beauty” should not be the catalyst in shaping my identity</span></p><p><span style="font-size: 16px; ">The word “beauty”,</span></p><p><span style="font-size: 16px; ">It has no true meaning, but a distraction to trick us in believing nothing more than words like “pretty”.</span></p><p><span style="font-size: 16px; ">Reducing us to judgements that are shallow and petty.</span></p><p><span style="font-size: 16px; ">Turning my friends and I from royalty to peasantry.</span></p><p><span style="font-size: 16px; ">Fighting for the crown that we already have and own</span></p><p><span style="font-size: 16px; ">If someone tells me I’m beautiful, I will take it with a grain of sadness—</span></p><p><span style="font-size: 16px; ">There is someone somewhere out there that is viewed as something less.</span></p><p><span style="font-size: 16px; ">The sad thing is I’ve got used to assuming it’s me that is beautiful</span></p><p><span style="font-size: 16px; ">But it’s my conformity to the norms of femininity. </span></p><p></p><p><span style="font-size: 16px; ">I still try to act that makeup that has transported me to mental elevation </span></p><p><span style="font-size: 16px; ">Yet I still subject myself to self-degradation because even with these rose-tinted glasses I have on,</span></p><p><span style="font-size: 16px; ">All I can see are my conspicuous imperfections.</span></p><p></p><p><span style="font-size: 16px; ">I understood that beauty is not within the eye of the beholder- </span></p><p><span style="font-size: 16px; ">nor is it even skin deep to your bones.</span></p><p><span style="font-size: 16px; ">It is a fluid social construct that beguiles us, manipulates us. </span></p><p><span style="font-size: 16px; ">It keeps us weak, hidden from our strengths, of our individuality and true beauty.</span></p><p><span style="font-size: 16px; ">They made sure of this.</span></p><p><span style="font-size: 16px; ">Even though there is still a trace of the pain they have caused</span></p><p><span style="font-size: 16px; ">Those bruises are as hard as armour and as faint that sometimes I can’t see anymore </span></p><p><span style="font-size: 16px; ">The stones you used to bruise me have rolled away.</span></p><p><span style="font-size: 16px; ">Your beauty and society  is your weapon. </span></p><p><span style="font-size: 16px; ">My beauty is my power.</span></p><p></p><p><span style="font-size: 16px; ">If I had to choose between what society considered beautiful and just fighting the battle to be what you want and not what I want,</span></p><p><span style="font-size: 16px; ">I don’t think I would like to remain myself.</span></p><p><span style="font-size: 16px; ">Because I am the girl with dry humour, </span></p><p><span style="font-size: 16px; ">And your plucked eyebrows now means nothing to me.</span></p><p></p>
+
+                <div class="blog-categories-container" style="margin-top: 12px; margin-bottom: 12px;">
+
+                    <!-- $(REGION POST_CATEGORY_TAG_AREA POST_CATEGORY_TAG) -->
+
+                    
+                    <a class="blog-category-tag" href="./blog/culture-.html">Culture </a>
+                    <!-- $(ENDREGION POST_CATEGORY_TAG_AREA) -->
+
+                </div>
+            </div>
+
+
+
+            <div class="wide-area">
+
+                <div class="separator"></div>
+
+                <div style="height: 8px"></div>
+
+                <!-- DISQUS AREA -->
+
+                <div id="disqus_thread"></div>
+                <script>
+                    /**
+                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                    var disqus_config = function () {
+
+                        this.page.url = window.location
+                            .href; // Replace PAGE_URL with your page's canonical URL variable
+
+                        // TEST URL
+                        //this.page.url = "https://hsscstc.github.io/blog/test.html"; 
+
+                        this.page.identifier =
+                            "dgPjFsqyGnIcr7v8"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+
+                    (function () { // DON'T EDIT BELOW THIS LINE
+                        var d = document,
+                            s = d.createElement('script');
+                        s.src = 'https://issia.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments
+                        powered by Disqus.</a></noscript>
+            </div>
+
+
+
+            <div class="wide-area mobileonly small-section-mobile serif-area-all" style="margin-bottom: 16px;">
+                <h2 class="medium-text">Subscribe to our newsletter</h2>
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScSJCa4CIBKgI9wXaZicix14EfD7NUQxLWW0hlLHo1xqNJFTg/viewform">
+                    <button class="heavy-button">Subscribe now
+                    </button>
+                </a>
+            </div>
+
+
+            <!-- DESKTOP GRID LAYOUT -->
+
+            <div class="wide-area desktoponly">
+                <h2>View our latest posts</h2>
+            </div>
+
+            <!-- Syntax for POST_UID: arg 1 = index, arg 2 = category index where 0 is all, and 1 is archived-->
+            <div class="desktoponly serif-area wide-area" id="blog-grid-area-mini" style="margin-bottom: 16px">
+
+
+
+                <!-- $(REGION POST_AREA $(GLOBAL POST_UID 0 0)) -->
+
+                <a class="mini-teaser-1 row-1 linkfix grid-sep-bottom grid-sep-top childhover-parent"
+                    href="./blog/the-importance-of-friendship-.html">
+
+                    <div class="vertical-align-middle">
+
+                        <span class="categories-container">
+                            <!-- $(TEMPLATE POST_CATEGORY_TAG_GALLERY)$(ENDTEMPLATE POST_CATEGORY_TAG_GALLERY) -->
+
+                            <!-- $(REGION POST_CATEGORY_TAG_AREA POST_CATEGORY_TAG_GALLERY) -->
+
+                            
+                            <span class="grid-category-text">General</span>
+
+                            <!-- $(ENDREGION POST_CATEGORY_TAG_AREA) -->
+                        </span>
+
+                        <h3 class="grid-small-header childhover-target">
+                            The Importance of Friendship </h3>
+
+                        <span>There’s no solid definition of what friends are. Friends can(...)</span>
+                    </div>
+                </a>
+
+                <!-- $(ENDREGION POST_AREA) -->
+
+
+                <!-- $(REGION POST_AREA $(GLOBAL POST_UID 1 0)) -->
+
+                <a class="mini-teaser-2 grid-sep-top row-1 linkfix grid-sep-bottom grid-sep-left childhover-parent"
+                    href="./blog/your-expectations.html">
+
+                    <div class="vertical-align-middle">
+
+                        <span class="categories-container">
+                            <!-- $(TEMPLATE POST_CATEGORY_TAG_GALLERY)$(ENDTEMPLATE POST_CATEGORY_TAG_GALLERY) -->
+
+                            <!-- $(REGION POST_CATEGORY_TAG_AREA POST_CATEGORY_TAG_GALLERY) -->
+
+                            
+                            <span class="grid-category-text">Culture </span>
+
+                            <!-- $(ENDREGION POST_CATEGORY_TAG_AREA) -->
+                        </span>
+
+                        <h3 class="grid-small-header childhover-target">
+                            'Your Expectations'</h3>
+
+                        <span>Sticks and stones break my bones but growing up has torn my (...)</span>
+                    </div>
+                </a>
+
+                <!-- $(ENDREGION POST_AREA) -->
+
+            </div>
+
+            <div class="wide-area desktoponly small-section serif-area" style="margin-bottom: 32px;">
+                <h2 class="medium-text" id="mailing-text">Subscribe to our newsletter</h2>
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScSJCa4CIBKgI9wXaZicix14EfD7NUQxLWW0hlLHo1xqNJFTg/viewform">
+                    <button id="mailing-button" class="heavy-button">Subscribe now
+                    </button>
+                </a>
+            </div>
+
+            <footer>
+                <div class="spacer"></div>
+
+                <span id="footer-logo-container">
+                    <img alt="ISSIA Logo" id="footer-logo" src="./content/images/logo.png">
+                    <span>Copyright © 2020 ISSIA</span>
+                </span>
+                <div id="social-area">
+                    <a href="https://www.facebook.com/issiaofficial/" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/issia.hk/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com/company/issiahk" target="_blank" class="fa fa-linkedin"></a>
+                </div>
+
+            </footer>
+
+            <!-- scripts -->
+            <script src="./scripts/global.js"></script>
+            <script src="./scripts/dateDisplay.js"></script>
+            <script src="./scripts/gallery.js"></script>
+
+        </div>
+
+        <footer id="footer-color-filler"></footer>
+    </div>
+</body>
+
+</html>
