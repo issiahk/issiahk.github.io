@@ -460,7 +460,10 @@ footer {
     margin-top: -180px;
 }
 
-
+#terms-link {
+    font-size: 14px;
+    margin: -8px 0 0 8px;
+}
 
 #footer-logo {
     height: 72px;
@@ -476,7 +479,7 @@ footer {
 }
 
 #footer-logo-container span {
-    margin: 0 0 6px 12px;
+    margin: 0 12px 6px 0;
 }
 
 .mobile-button {
@@ -589,6 +592,20 @@ footer {
 
 @media (max-width: 600px) {
 
+    footer {
+        background-color: var(--lightGray);
+        height: 200px;
+        overflow: hidden;
+        margin: 0;
+    }
+    
+    #footer-color-filler {
+        background-color: var(--lightGray);
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+        margin-top: -200px;
+    }
 
     .heavy-button {
         font-size: 24px;
